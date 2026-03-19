@@ -1,17 +1,11 @@
 
-@import url("./normalize.css");
-@import url("./header/header.css");
-@import url("./content/form.css");
-@import url("./footer/footer.css");
+@import url("../styles/index.css");
 :root{
-
   --backgroundheader:#FFFFFF;
   --mainfont:#000000;
   --acento:#FF976B;
   --fontaddress:#6F6F6F;
 }
-
-
 
 body{
   font-family: Noto serif, 'Times New Roman', serif;
@@ -22,3 +16,241 @@ body{
   width: 1600px;
 }
 
+header{
+  background-image: url('../images/background_header.svg');
+  background-size: auto;
+  background-color: var(--backgroundheader);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.nav{
+  display: flex;
+  justify-content:space-between;
+}
+
+.nav-logo{
+  margin: 30px 30px 105px 39px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content:space-between;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 30px;
+  margin-right: 26px;
+  list-style: none;
+
+}
+
+.nav-link{
+  text-decoration: none;
+  color: var(--mainfont);
+}
+
+.nav-link-booking{
+  margin-right: 20px;
+}
+
+.header-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin-left: 80px;
+  margin-right: 0;
+}
+
+.header-info-first{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: left;
+  max-width: 700px;
+  margin-right: 2px;
+}
+
+.header-info-title{
+  margin-top: 28px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+}
+
+
+.header-info-span-accent{
+  color: var(--acento);
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+}
+
+.header-info-image{
+  width: 646px;
+  height: 568px;
+  margin-right: 5px;
+}
+
+.header-info-description{
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 683px;
+}
+
+.header-info-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6F6F6F;
+  text-align: left;
+  margin: 0 80px 40px 80px;
+}
+
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--acento);
+}
+
+.reservation{
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 40px;
+}
+
+.reservation-label{
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.booking-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10.2px; /* Space between each input block */
+  text-align: left;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input{
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #333;
+}
+
+.booking-form button{
+  background-color: #e67e45; /* The specific orange from your image */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.checkbox-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.checkbox-group input{
+  width: 18px;
+  height: 18px;
+}
+
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #d35400; /* Deep burnt orange background */
+  color: white;
+  padding: 60px 0 40px 0;
+  width: 1600px;
+  padding: 0 100px;    /* Internal padding for the text */
+}
+
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  gap: 80px; /* Forces copyright to the bottom */
+}
+
+.img-footer{
+  max-width: 200px;
+  max-height: 300px;
+  filter: invert(100%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-left{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-left h2{
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.social-network ol{
+  list-style: none;
+  padding: 0;
+}
+
+.social-network li{
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.social{
+  text-decoration: note;
+
+}
