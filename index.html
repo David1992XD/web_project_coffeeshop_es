@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triple Espresso</title>
+    <link rel="shortcut icon" href=".images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+    <!--nav.nav>img.logo>ol.nav-links>li.nav-link*2-->
+    <nav class="nav">
+      <img  class="nav-logo" src="./images/logo_coffeeshop_dark.svg" alt="Branding Logo">
+        <ol class="nav-links">
+          <li><a class="nav-link nav-link-booking" href="#reservation">Reservar una mesa</a></li>
+          <li><a class="nav-link nav-link-contacts" href="#contacts">Contactanos</a></li>
+        </ol>
+    </nav>
+    <section class="header-info">
+      <div class="header-info-first" >
+        <h1 class="header-info-title"><span class="header-info-span-accent">Café de especialidad</span><br>en Triple Peaks</h1>
+        <p class="header-description">¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café para darte energía y motivar tu creatividad.</p>
+      </div>
+      <div>
+        <img class="header-info-image" src="./images/inside_coffee_shop.png" alt="inside_coffee_shop">
+      </div>
+    </section>
+    <section class="header-info-details">
+      <div class="header-info-details-text">Horario: <br>Lunes a Viernes (de 10:00h a 19:00h) <br>Sábados y Domingos (de 11:00h a 18:00h)</div>
+      <div class="header-info-details-hours">Avenida del Éxito 200, Ciudad Triple Peaks</div>
+    </section>
+    </header>
+    <!--main.content>section.reservation>form>(label+input:text)*4-->
+    <main class="content">
+      <section id="reservation" class="reservation">
+        <h1 class="reservation-label">Reservar una mesa</h1>
+        <form class="booking-form" action="post">
+          <div class="form-group">
+            <label for="name">Nombre *</label><br>
+            <input type="text" id="name" required  placeholder="Nombre"><br>
+          </div>
+          <div class="form-group">
+            <label>Número de comensales *</label><br>
+            <input type="number" id="n-party" required  placeholder="1-8"><br>
+          </div>
+          <div class="form-group">
+            <label>Fecha y hora *</label><br>
+            <input type="datetime-local" id="date-booking" required><br>
+          </div>
+          <div class="form-group">
+            <label>Tu correo electrónico *</label><br>
+            <input type="email"  id="email" required placeholder="email@email.com"><br>
+          </div>
+          <button type="submit">Reservar una mesa</button><br>
+          <div class="checkbox-group">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">Acepto los términos de uso</label>
+        </div>
+        </form>
+      </section>
+    </main>  
+    <footer class="footer" id="contacts">
+      <div class="footer-left">
+        <img class="img-footer" src="./images/logo_coffeeshop_dark.svg" alt="">
+        <h2>© 2026 David Torres</h2>
+      </div>
+      
+      <div class="social-network">
+        <h2>Redes sociales</h2>
+        <ol>
+          <li class="social">Facebook</li>
+          <li class="social">Instagram</li>
+        </ol>
+      </div> 
+    </footer>
+  </body>
+</html>

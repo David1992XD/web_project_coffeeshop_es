@@ -1,0 +1,24 @@
+
+@import url("./normalize.css");
+@import url("./header/header.css");
+@import url("./content/form.css");
+@import url("./footer/footer.css");
+:root{
+
+  --backgroundheader:#FFFFFF;
+  --mainfont:#000000;
+  --acento:#FF976B;
+  --fontaddress:#6F6F6F;
+}
+
+
+
+body{
+  font-family: Noto serif, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 1100px;
+  max-width: 1600px;
+  width: 1600px;
+}
+
